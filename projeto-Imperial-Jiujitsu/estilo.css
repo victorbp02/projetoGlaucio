@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+main{
+    background-color: #000;
+    color: #fff;
+    opacity: 80%;
+}
+
+.header-top {
+    height: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
+}
+
+.tarja {
+    height: 30px;
+    width: 10%;
+    background-color: red;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.grau0 {
+    background-color: #fff;
+    height: 30px;
+    width: 7px;
+}
+
+.grau {
+    background-color: #fff;
+    height: 30px;
+    width: 7px;
+
+}
+
+.grau2 {
+    background-color: #fff;
+    height: 30px;
+    width: 7px;
+    margin-right: 50px;
+}
+
+
+
+
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    margin-top: 30px;
+    opacity: 80%;
+}
+
+
+header:hover {
+    height: 130px;
+    transition: all 0.4s ease-in-out;
+}
+
+
+nav {
+    width: 100%;
+    margin-left: 80px;
+}
+
+ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    justify-content: right;
+    margin-left: 600px;
+}
+
+
+
+li {
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .5s;
+    font-family: 'kdam thmor pro', sans-serif;
+    margin-left: 100px;
+}
+
+li:hover {
+    color: #D21617;
+
+}
+
+#logo {
+    width: 90px;
+    height: auto;
+    float: left;
+    margin-left: 100px;
+}
+
+
+.parallax-container {
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    color: white;
+}
+
+.parallax-bg {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content01 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+#home .parallax-bg {
+    background-image: url('./img/asdasd.jpg');
+}
+
+
+
+#trailer-container {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    opacity: 80%;
+   
+}
+
+.content {
+    height: 640px;
+    width: 980px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 5px 0px rgb(0, 0, 0, 1.0);
+    margin-top: 740px;
+
+}
+
+.content .slide img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.navigation {
+    position: absolute;
+    left: 24%;
+    display: flex;
+    margin-top: 750px;
+}
+
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+
+}
+
+.bar:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+#slide1:checked~.s1 {
+    margin-left: 0;
+}
+
+#slide2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked~.s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked~.s1 {
+    margin-left: -80%;
+}
+
+#sinopse {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 23px;
+    margin-left: 1000px;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'kdam thmor pro', sans-serif;
+    width: 70%;
+    
+
+}
+
+.button {
+    width: 400px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-bottom: 80px;
+    margin-left: 80px;
+    margin-top: 50px;
+
+}
+
+.button:hover {
+
+    color: #000;
+}
+
+.text-professor {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 40px 0 40px;
+    padding: 80px;
+    
+}
+
+.card {
+    width: 400px;
+    height: 500px;
+    perspective: 1000px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.card .info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+    border: groove;
+    border-radius: 10px;
+    background-color: red;
+    font-size: 24px;
+}
+
+.card:hover img {
+    transform: rotateY(180deg);
+}
+
+.card:hover .info {
+    transform: rotateY(360deg);
+}
+
+.horario{
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 40px;
+}
+
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+    background-color: black;
+    opacity: 80%;
+    
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 0 0 50px 45px;
+    margin-top: 50px;
+    
+}
+
+th,
+td {
+    border: 3px solid #fff;
+    padding: 8px;
+    text-align: center;
+    color:#fff
+
+}
+
+footer {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
